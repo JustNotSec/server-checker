@@ -33,11 +33,11 @@ function fetchAndDisplay(url, filename) {
         const responseData = JSON.stringify(response.data, null, 2);
         fs.writeFileSync(resultPath, responseData);
         setTimeout(() => {
-          console.clear(); // Menghapus pesan "Sedang Memproses Mohon Tunggu..."
+          console.clear();
           console.log(gradient.passion(responseData));
-          console.log(gradient.summer('Data Ditemukan!!')); // Menampilkan pesan "Data Ditemukan!!"
+          console.log(gradient.summer('Data Ditemukan!!'));
           console.log(`Isi website telah ditulis ke dalam file ${resultPath}`);
-        }, 15000); // Tunggu 15 detik sebelum menampilkan pesan "Data Ditemukan!!"
+        }, 15000);
       })
       .catch(error => {
         console.error('Error fetching website:', error.message);
