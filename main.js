@@ -36,7 +36,7 @@ function fetchAndDisplay(url, filename) {
           console.clear();
           console.log(gradient.passion(responseData));
           console.log(gradient.summer('Data Ditemukan!!'));
-          console.log(`Isi website telah ditulis ke dalam file ${resultPath}`);
+          console.log(`Data Telah Di Tulis Dalam Format .txt! ${resultPath}`);
         }, 15000);
       })
       .catch(error => {
